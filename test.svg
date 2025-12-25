@@ -1,42 +1,29 @@
-<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="
-        background-color:#010b0a;
-        color:#00FF00;
-        font-family: 'Courier New', monospace;
-        padding:20px;
-        border-radius:10px;
-        line-height:1.4;
-        white-space:pre-wrap;
-        position:relative;
-        height:100%;
-    ">
-      <div style="opacity:0; animation:fadeIn 0.5s forwards;">█▒░ инициализация...</div>
-      <div style="opacity:0; animation:fadeIn 0.5s forwards; animation-delay:0.8s;">▒█▒ загрузка модулей...</div>
-      <div style="opacity:0; animation:fadeIn 0.5s forwards; animation-delay:1.6s;">▒▒█ запуск ядра...</div>
-      <div style="opacity:0; animation:fadeIn 0.5s forwards; animation-delay:2.4s;">█▒░ готово.</div>
-      <div style="opacity:0; animation:fadeIn 0.5s forwards; animation-delay:3.2s;">
-        пользователь: nktnvrvskj<br>
-        статус: изучение<br>
-        режим: терминал<br>
-        СТЕК: Python | JavaScript | Bash | Git | Linux | Терминал<br>
-        ШИФР: 01001000 01000001 01001011 01001010 01000101 01010010<br>
-        ROT13: хакир не шифр, он код
-      </div>
-      <div style="
-        width:10px;
-        height:1.2em;
-        background-color:#00FF00;
-        display:inline-block;
-        position:absolute;
-        bottom:20px;
-        animation:blink 1s step-end infinite;
-      "></div>
-    </div>
-  </foreignObject>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Фон консоли -->
+  <rect x="0" y="0" width="800" height="600" rx="20" ry="20" fill="#010b0a" />
 
-  <style>
-    @keyframes fadeIn { to { opacity:1; } }
-    @keyframes blink { 50% { opacity:0; } }
-  </style>
+  <!-- Текст построчно -->
+  <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00">█▒░ инициализация...</text>
+  <text x="20" y="80" font-family="Courier New, monospace" font-size="20" fill="#00FF00">▒█▒ загрузка модулей...</text>
+  <text x="20" y="110" font-family="Courier New, monospace" font-size="20" fill="#00FF00">▒▒█ запуск ядра...</text>
+  <text x="20" y="140" font-family="Courier New, monospace" font-size="20" fill="#00FF00">█▒░ готово.</text>
+
+  <text x="20" y="180" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
+  <text x="20" y="210" font-family="Courier New, monospace" font-size="20" fill="#00FF00">пользователь: nktnvrvskj</text>
+  <text x="20" y="240" font-family="Courier New, monospace" font-size="20" fill="#00FF00">статус: изучение</text>
+  <text x="20" y="270" font-family="Courier New, monospace" font-size="20" fill="#00FF00">режим: терминал</text>
+  <text x="20" y="300" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
+  <text x="20" y="330" font-family="Courier New, monospace" font-size="20" fill="#00FF00">СТЕК:</text>
+  <text x="20" y="360" font-family="Courier New, monospace" font-size="20" fill="#00FF00">Python | JavaScript | Bash</text>
+  <text x="20" y="390" font-family="Courier New, monospace" font-size="20" fill="#00FF00">Git | Linux | Терминал</text>
+  <text x="20" y="420" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
+  <text x="20" y="450" font-family="Courier New, monospace" font-size="20" fill="#00FF00">ШИФР:</text>
+  <text x="20" y="480" font-family="Courier New, monospace" font-size="20" fill="#00FF00">01001000 01000001 01001010 01001010 01000101 01010010</text>
+  <text x="20" y="510" font-family="Courier New, monospace" font-size="20" fill="#00FF00">ROT13: хакир не шифр, он код</text>
+
+  <!-- Мигающий курсор -->
+  <rect x="20" y="520" width="10" height="20" fill="#00FF00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
 </svg>
