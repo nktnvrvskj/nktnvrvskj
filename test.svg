@@ -1,89 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <!-- Фон консоли -->
-  <rect x="0" y="0" width="800" height="600" rx="20" ry="20" fill="#010b0a" />
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <rect x="0" y="0" width="800" height="200" rx="20" ry="20" fill="#010b0a" />
 
-  <!-- Первая строка "█▒░ инициализация..." -->
   <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
-    <tspan>
-      █
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0s" fill="freeze"/>
+    <tspan opacity="0">█
+      <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.05s" fill="freeze"/>
     </tspan>
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.05s" fill="freeze"/>
+    <tspan opacity="0">▒
+      <animate attributeName="opacity" from="0" to="1" begin="0.05s" dur="0.05s" fill="freeze"/>
     </tspan>
-    <tspan>
-      ░
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.1s" fill="freeze"/>
+    <tspan opacity="0">░
+      <animate attributeName="opacity" from="0" to="1" begin="0.1s" dur="0.05s" fill="freeze"/>
     </tspan>
-    <tspan>
-       инициализация...
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.15s" fill="freeze"/>
+    <tspan opacity="0"> инициализация...
+      <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.5s" fill="freeze"/>
     </tspan>
   </text>
-
-  <!-- Вторая строка "▒█▒ загрузка модулей..." -->
-  <text x="20" y="80" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.7s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      █
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.75s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.8s" fill="freeze"/>
-    </tspan>
-    <tspan>
-       загрузка модулей...
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.85s" fill="freeze"/>
-    </tspan>
-  </text>
-
-  <!-- Добавляем ещё строки по аналогии -->
-  <text x="20" y="110" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.4s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.45s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      █
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.5s" fill="freeze"/>
-    </tspan>
-    <tspan>
-       запуск ядра...
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.55s" fill="freeze"/>
-    </tspan>
-  </text>
-
-  <text x="20" y="140" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
-    <tspan>
-      █
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.1s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      ▒
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.15s" fill="freeze"/>
-    </tspan>
-    <tspan>
-      ░
-      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.2s" fill="freeze"/>
-    </tspan>
-    <tspan>
-       готово.
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.25s" fill="freeze"/>
-    </tspan>
-  </text>
-
-  <!-- Мигающий курсор -->
-  <rect x="20" y="180" width="10" height="20" fill="#00FF00">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
 </svg>
