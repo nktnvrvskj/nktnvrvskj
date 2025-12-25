@@ -3,27 +3,87 @@
   <!-- Фон консоли -->
   <rect x="0" y="0" width="800" height="600" rx="20" ry="20" fill="#010b0a" />
 
-  <!-- Текст построчно -->
-  <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00">█▒░ инициализация...</text>
-  <text x="20" y="80" font-family="Courier New, monospace" font-size="20" fill="#00FF00">▒█▒ загрузка модулей...</text>
-  <text x="20" y="110" font-family="Courier New, monospace" font-size="20" fill="#00FF00">▒▒█ запуск ядра...</text>
-  <text x="20" y="140" font-family="Courier New, monospace" font-size="20" fill="#00FF00">█▒░ готово.</text>
+  <!-- Первая строка "█▒░ инициализация..." -->
+  <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
+    <tspan>
+      █
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.05s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ░
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.1s" fill="freeze"/>
+    </tspan>
+    <tspan>
+       инициализация...
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.15s" fill="freeze"/>
+    </tspan>
+  </text>
 
-  <text x="20" y="180" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
-  <text x="20" y="210" font-family="Courier New, monospace" font-size="20" fill="#00FF00">пользователь: nktnvrvskj</text>
-  <text x="20" y="240" font-family="Courier New, monospace" font-size="20" fill="#00FF00">статус: изучение</text>
-  <text x="20" y="270" font-family="Courier New, monospace" font-size="20" fill="#00FF00">режим: терминал</text>
-  <text x="20" y="300" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
-  <text x="20" y="330" font-family="Courier New, monospace" font-size="20" fill="#00FF00">СТЕК:</text>
-  <text x="20" y="360" font-family="Courier New, monospace" font-size="20" fill="#00FF00">Python | JavaScript | Bash</text>
-  <text x="20" y="390" font-family="Courier New, monospace" font-size="20" fill="#00FF00">Git | Linux | Терминал</text>
-  <text x="20" y="420" font-family="Courier New, monospace" font-size="20" fill="#00FF00">---</text>
-  <text x="20" y="450" font-family="Courier New, monospace" font-size="20" fill="#00FF00">ШИФР:</text>
-  <text x="20" y="480" font-family="Courier New, monospace" font-size="20" fill="#00FF00">01001000 01000001 01001010 01001010 01000101 01010010</text>
-  <text x="20" y="510" font-family="Courier New, monospace" font-size="20" fill="#00FF00">ROT13: хакир не шифр, он код</text>
+  <!-- Вторая строка "▒█▒ загрузка модулей..." -->
+  <text x="20" y="80" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.7s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      █
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.75s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="0.8s" fill="freeze"/>
+    </tspan>
+    <tspan>
+       загрузка модулей...
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.85s" fill="freeze"/>
+    </tspan>
+  </text>
+
+  <!-- Добавляем ещё строки по аналогии -->
+  <text x="20" y="110" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.4s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.45s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      █
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="1.5s" fill="freeze"/>
+    </tspan>
+    <tspan>
+       запуск ядра...
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.55s" fill="freeze"/>
+    </tspan>
+  </text>
+
+  <text x="20" y="140" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
+    <tspan>
+      █
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.1s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ▒
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.15s" fill="freeze"/>
+    </tspan>
+    <tspan>
+      ░
+      <animate attributeName="opacity" values="0;1" dur="0.05s" begin="2.2s" fill="freeze"/>
+    </tspan>
+    <tspan>
+       готово.
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.25s" fill="freeze"/>
+    </tspan>
+  </text>
 
   <!-- Мигающий курсор -->
-  <rect x="20" y="520" width="10" height="20" fill="#00FF00">
+  <rect x="20" y="180" width="10" height="20" fill="#00FF00">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>
