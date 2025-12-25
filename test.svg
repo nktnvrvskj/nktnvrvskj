@@ -3,84 +3,103 @@
   <!-- Фон консоли -->
   <rect x="0" y="0" width="800" height="600" rx="20" ry="20" fill="#010b0a" />
 
-  <!-- Строки консоли, каждая появляется с задержкой -->
-  <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
-    █▒░ инициализация...
-    <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.5s" fill="freeze"/>
+  <!-- Первая строка: █▒░ инициализация... -->
+  <text x="20" y="50" font-family="Courier New, monospace" font-size="20" fill="#00FF00">
+    <tspan opacity="0">█
+      <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.05s" fill="freeze"/>
+    </tspan>
+    <tspan opacity="0">▒
+      <animate attributeName="opacity" from="0" to="1" begin="0.05s" dur="0.05s" fill="freeze"/>
+    </tspan>
+    <tspan opacity="0">░
+      <animate attributeName="opacity" from="0" to="1" begin="0.1s" dur="0.05s" fill="freeze"/>
+    </tspan>
+    <tspan opacity="0"> инициализация...
+      <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.5s" fill="freeze"/>
+    </tspan>
   </text>
 
+  <!-- Вторая строка: ▒█▒ загрузка модулей... -->
   <text x="20" y="80" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ▒█▒ загрузка модулей...
-    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="1s" dur="0.5s" fill="freeze"/>
   </text>
 
+  <!-- Третья строка: ▒▒█ запуск ядра... -->
   <text x="20" y="110" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ▒▒█ запуск ядра...
-    <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.5s" fill="freeze"/>
   </text>
 
+  <!-- Четвёртая строка: █▒░ готово. -->
   <text x="20" y="140" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     █▒░ готово.
-    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.5s" fill="freeze"/>
   </text>
 
+  <!-- Информационные строки -->
   <text x="20" y="180" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ---
-    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="210" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     пользователь: nktnvrvskj
-    <animate attributeName="opacity" from="0" to="1" begin="3s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="3.4s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="240" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     статус: изучение
-    <animate attributeName="opacity" from="0" to="1" begin="3.6s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="4s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="270" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     режим: терминал
-    <animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="300" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ---
-    <animate attributeName="opacity" from="0" to="1" begin="4.8s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="5.2s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="330" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     СТЕК:
-    <animate attributeName="opacity" from="0" to="1" begin="5.4s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="5.8s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="360" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     Python | JavaScript | Bash
-    <animate attributeName="opacity" from="0" to="1" begin="6s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="6.4s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="390" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     Git | Linux | Терминал
-    <animate attributeName="opacity" from="0" to="1" begin="6.6s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="7s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="420" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ---
-    <animate attributeName="opacity" from="0" to="1" begin="7.2s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="7.6s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="450" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ШИФР:
-    <animate attributeName="opacity" from="0" to="1" begin="7.8s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="8.2s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="480" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     01001000 01000001 01001010 01001010 01000101 01010010
-    <animate attributeName="opacity" from="0" to="1" begin="8.4s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="8.8s" dur="0.5s" fill="freeze"/>
   </text>
 
   <text x="20" y="510" font-family="Courier New, monospace" font-size="20" fill="#00FF00" opacity="0">
     ROT13: хакир не шифр, он код
-    <animate attributeName="opacity" from="0" to="1" begin="9s" dur="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" begin="9.4s" dur="0.5s" fill="freeze"/>
   </text>
+
+  <!-- Мигающий курсор в конце последней строки -->
+  <rect x="20" y="520" width="10" height="20" fill="#00FF00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
 </svg>
